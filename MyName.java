@@ -58,6 +58,32 @@ public class MyName
             }
 
             System.out.print(" "); // some space before next Letter
+			
+			
+		 // *********** to print columns with  $ Symbol  for Letter V  *********************** *
+
+            // to print left spaces
+            for (int space=0;space<row;space++)
+            {
+                System.out.print(" ");
+            }
+
+            // to print-columns-  $ Symbol  for V
+            for (int column = (n+1 - row); column >=1; column--)
+            {
+                if (column ==n+1 - row || column == 1)  // printing column in the 1st and last column
+                    System.out.print("$ ");
+                else
+                    System.out.print("  ");
+            }
+            // to print right spaces
+            for (int space=0;space<row;space++)
+            {
+                System.out.print(" ");
+            }
+
+            System.out.print(" "); // some space before next Letter
+
 
 			
             System.out.println();
