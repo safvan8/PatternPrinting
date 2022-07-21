@@ -45,6 +45,19 @@ public class MyName
                 System.out.print(" ");
             }
             System.out.print(" "); // some space before next Letter
+			
+			
+			
+			// ********* to print columns with  $ Symbol  for Letter F  *********************** *
+            for (int colmn=1;colmn<=n;colmn++ )
+            {
+                if ( row == 1 || row ==3 || colmn ==1)
+                    System.out.print("$ ");
+                else
+                    System.out.print("  ");
+            }
+
+            System.out.print(" "); // some space before next Letter
 
 			
             System.out.println();
