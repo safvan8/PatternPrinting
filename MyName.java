@@ -131,13 +131,13 @@ public class MyName
             // ********* to print columns with  $ Symbol  for Letter P  *********************** *
             for (int column=1;column <=n;column++)
             {
-                if ( row==1 || row == 3 || column == 1 || (column == 5 && row !=4 && row != 5 ))
+                if ( row==1 || row == 2 || column == 1 || (column == 5 && row !=4 && row != 5 ))
                     System.out.print("$ ");
                 else
                     System.out.print("  ");
             }
 			
-			// p letter modified
+	
 			
             System.out.println();
         }
