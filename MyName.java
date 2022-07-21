@@ -21,6 +21,32 @@ public class MyName
             }
             System.out.print(" "); // some space before next Letter
 			
+			// ********* to print columns with  $ Symbol  for Letter A  *********************** *
+            // to print left spaces
+            for (int spaces=1;spaces<= n- row;spaces++)
+            {
+                System.out.print(" ");
+            }
+            // to print  $ Symbol
+            for(int colmn=1;colmn<=row;colmn++)
+            {
+                if (row > 3 && colmn == 2 || row > 3 && colmn == 3 || // 2nd & 3ird columns not required for both rows
+                        row == 5 && colmn == 4      // for 5th row
+                )
+                    System.out.print("  ");
+                else
+                    System.out.print("$ ");
+
+            }
+
+            // to print right spaces
+            for (int spaces=1;spaces<= n- row;spaces++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(" "); // some space before next Letter
+
+			
             System.out.println();
         }
     }
