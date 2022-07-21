@@ -109,6 +109,21 @@ public class MyName
                 System.out.print(" ");
             }
             System.out.print(" "); // some space before next Letter
+			
+			
+			
+			// ********* to print columns with  $ Symbol  for Letter N  *********************** *
+            for (int colmn=1;colmn<=n;colmn++)
+            {
+                if (colmn ==1 || colmn == row || colmn == 5)
+                {
+                    System.out.print("$ ");
+                }
+                else
+                    System.out.print("  ");
+            }
+            System.out.print(" "); // some space before next Letter
+			
 
 			
             System.out.println();
