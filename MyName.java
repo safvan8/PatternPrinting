@@ -137,7 +137,14 @@ public class MyName
             }
             System.out.print("   "); // some space before next Letter
 
-			
+            // ********* to print columns with  $ Symbol  for Letter P  *********************** *
+            for (int column=1;column <=n;column++)
+            {
+                if ( row==1 || row == 3 || column == 1 || (column == 5 && row !=4 && row != 5 ))
+                    System.out.print("$ ");
+                else
+                    System.out.print("  ");
+            }
 			
 			
             System.out.println();
