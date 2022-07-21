@@ -138,7 +138,7 @@ public class MyName
             System.out.print("   "); // some space before next Letter
 
 			
-			// p letter modified
+			
 			
             System.out.println();
         }
