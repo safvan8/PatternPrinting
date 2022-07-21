@@ -124,18 +124,19 @@ public class MyName
             }
             System.out.print(" "); // some space before next Letter
 			
-			
-			
-			
-			
-            // ********* to print columns with  $ Symbol  for Letter P  *********************** *
+		
+			// ********* to print a Separator Dot between name and Initial  *********************** *
             for (int column=1;column <=n;column++)
             {
-                if ( row==1 || row == 3 || column == 1 || (column == 5 && row !=4 && row != 5 ))
-                    System.out.print("$ ");
+                if (row == 4 && (column == 2 || column == 3 )   ||
+                        row == 5 && (column == 2 || column == 3 )
+                )
+                    System.out.print("$");
                 else
-                    System.out.print("  ");
+                    System.out.print(" ");
             }
+            System.out.print("   "); // some space before next Letter
+
 			
 
 			
