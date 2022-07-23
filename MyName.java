@@ -2,7 +2,7 @@ public class MyName
 {
     public static void main(String[] args)
     {
-        int n=n;
+        int n=5;
         // to print rows for all the Letters
         for (int row=1;row<=n;row++)
         {
