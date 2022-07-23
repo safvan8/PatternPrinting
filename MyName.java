@@ -2,7 +2,7 @@ public class MyName
 {
     public static void main(String[] args)
     {
-        int n=5;
+        int n=n;
         // to print rows for all the Letters
         for (int row=1;row<=n;row++)
         {
@@ -10,8 +10,8 @@ public class MyName
             // ********* to print columns with  $ Symbol  for Letter S  *********************** *
             for (int colmn=1;colmn<=n;colmn++ )
             {
-                if ( row==1 || row==3 || row ==5 ||
-                        (colmn==1 && row!=4) || (colmn ==5 && row!=2)
+                if ( row==1 || row==3 || row ==n ||
+                        (colmn==1 && row!=4) || (colmn ==n && row!=2)
                 )
                 {
                     System.out.print("$");
@@ -31,7 +31,7 @@ public class MyName
             for(int colmn=1;colmn<=row;colmn++)
             {
                 if (row > 3 && colmn == 2 || row > 3 && colmn == 3 || // 2nd & 3ird columns not required for both rows
-                        row == 5 && colmn == 4      // for 5th row
+                        row == n && colmn == 4      // for nth row
                 )
                     System.out.print("  ");
                 else
@@ -95,7 +95,7 @@ public class MyName
             for(int colmn=1;colmn<=row;colmn++)
             {
                 if (row > 3 && colmn == 2 || row > 3 && colmn == 3 || // 2nd & 3ird columns not required for both rows
-                        row == 5 && colmn == 4      // for 5th row
+                        row == n && colmn == 4      // for nth row
                 )
                     System.out.print("  ");
                 else
@@ -115,7 +115,7 @@ public class MyName
 			// ********* to print columns with  $ Symbol  for Letter N  *********************** *
             for (int colmn=1;colmn<=n;colmn++)
             {
-                if (colmn ==1 || colmn == row || colmn == 5)
+                if (colmn ==1 || colmn == row || colmn == n)
                 {
                     System.out.print("$ ");
                 }
@@ -129,7 +129,7 @@ public class MyName
             for (int column=1;column <=n;column++)
             {
                 if (row == 4 && (column == 2 || column == 3 )   ||
-                        row == 5 && (column == 2 || column == 3 )
+                        row == n && (column == 2 || column == 3 )
                 )
                     System.out.print("$");
                 else
@@ -140,7 +140,7 @@ public class MyName
             // ********* to print columns with  $ Symbol  for Letter P  *********************** *
             for (int column=1;column <=n;column++)
             {
-                if ( row==1 || row == 3 || column == 1 || (column == 5 && row !=4 && row != 5 ))
+                if ( row==1 || row == 3 || column == 1 || (column == n && row !=4 && row != n ))
                     System.out.print("$ ");
                 else
                     System.out.print("  ");
